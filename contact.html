@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - AlinQ Laundry</title>
+    <link rel="stylesheet" href="contact.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h2 class="logo">AlinQ Laundry</h2>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="signup.php">Signup</a></li>
+          <li><a href="login.php">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="contact-hero">
+      <h1>Contact Us</h1>
+      <p>We’re here to help. Reach out to us anytime.</p>
+
+    </header>
+
+    <!-- How It Works Section -->
+    <section class="steps-section">
+      <h2>THIS IS HOW IT WORKS: 4 EASY STEPS</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <img src="image2.jpeg" alt="Bag Clothes" />
+          <p>
+            <strong>Step 1</strong><br /><span class="highlight">Bag up</span>
+            all your dirty clothes
+          </p>
+        </div>
+        <div class="step">
+          <img src="image3.jpeg" alt="Pickup Truck" />
+          <p>
+            <strong>Step 2</strong><br />We
+            <span class="highlight">pick up</span> your clothes
+          </p>
+        </div>
+        <div class="step">
+          <img src="image4.jpeg" alt="Washing Machine" />
+          <p>
+            <strong>Step 3</strong><br />We
+            <span class="highlight">clean</span> your clothes
+          </p>
+        </div>
+        <div class="step">
+          <img src="image5.jpeg" alt="Deliver Clothes" />
+          <p>
+            <strong>Step 4</strong><br />We
+            <span class="highlight">deliver</span> clean, folded clothes
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Details + Form -->
+    <section class="contact-section">
+      <div class="container contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <p><strong>Name:</strong> Pavithra Balamurugan</p>
+          <p><strong>Phone:</strong> <a href="tel:7603839278">7603839278</a></p>
+          <p><strong>Place:</strong> Madurai</p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:info@alinqlaundry.com">claraaliceb10@gmail.com</a>
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form action="contact.php" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message..."
+              required
+            ></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 AlinQ Laundry. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+/* services.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #002b5c;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #FFD700;
+}
+
+/* Hero Section */
+.services-hero {
+  background: url('https://images.unsplash.com/photo-1581579182916-28521d20aa39?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.services-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.services-hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.services-hero p {
+  font-size: 18px;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 0;
+}
+
+.services .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.box span {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .service-boxes {
+    flex-direction: column;
+  }
+}
